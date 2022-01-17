@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CRUDS 4</title>
+</head>
+<body>
+    
+    <h1 class="text-center m-4">CRUDS System</h1>
+
+    <div class="container form">
+        <div class="form-group m-3">
+            <label for="">Product Name</label>
+            <input id="productName" type="text" class="form-control">
+            <div id="productNameAlert" class="alert-danger p-2 my-2 rounded d-none">Please Enter The Name start With capital letter and then from 3 to 9 small letters. </div>
+        </div>
+
+        <div class="form-group m-3">
+            <label for="">Product Price</label>
+            <input id="productPrice" type="text" class="form-control">
+            <div id="productPriceAlert" class="alert-danger p-2 my-2 rounded d-none">Please Enter The Price from 100 to 10000 pound.</div>
+        </div>
+
+        <div class="form-group m-3">
+            <label for="">Product Category</label>
+            <input id="productCategory" type="text" class="form-control">
+            <div id="productCategoryAlert" class="alert-danger p-2 my-2 rounded d-none">Please Enter The Category from 3 to 10 Letters.</div>
+        </div>
+
+        <div class="form-group m-3">
+            <label for="">Product Description</label>
+            <input id="productDesc" type="text" class="form-control">
+        </div>
+
+        <button id="addProductButton" class="btn btn-info m-3">Add Product</button>
+    </div>
+
+    <div class="table container">
+        <input id="searchInput" type="text" class="search form-control w-50 mx-auto my-4" placeholder="Search..."></input>
+        <table class="table">
+            <thead>
+                <th>Index</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Category</th>
+                <th>Product Desc</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
